@@ -11,7 +11,7 @@ chainer.using_config('enable_backprop', False)
 
 class HandDetector(object):
     def __init__(self, arch=None, weights_file=None, model=None, device=-1):
-        print('Loading HandNet...')
+        # print('Loading HandNet...')
         self.model = params['archs'][arch]()
         serializers.load_npz(weights_file, self.model)
 

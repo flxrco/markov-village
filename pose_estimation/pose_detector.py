@@ -19,7 +19,7 @@ class PoseDetector(object):
         if model is not None:
             self.model = model
         else:
-            print('Loading the model...')
+            # print('Loading the model...')
             self.model = params['archs'][arch]()
 
             if weights_file:
